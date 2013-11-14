@@ -1,12 +1,12 @@
-sandra
+sandra (Speech ANDroid Apps)
 ======
 
-Speech ANDroid Apps
-
-This is the code for the book:
+Very soon you will find available here under GNU License the code for the book:
 
 Voice Application Development for Android, Michael McTear and Zoraida Callejas, PACKT Publishing, 2013
 http://androidspeechbook.wordpress.com/
+
+
 
 Voice Application Development for Android is a practical, hands-on guide that provides you with a series of clear, step-by-step examples which will help you to build on the basic technologies and create more advanced and more engaging applications. With this book, you will learn how to create useful voice apps that you can deploy on your own Android device in no time at all.
 
