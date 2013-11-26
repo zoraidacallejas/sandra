@@ -1,7 +1,7 @@
 sandra (Speech ANDroid Apps)
 ======
 
-Very soon you will find available here under GNU License the code for the book:
+On 1st December you will find available here under GNU License the code for the book:
 
 Voice Application Development for Android, Michael McTear and Zoraida Callejas, PACKT Publishing, 2013
 http://androidspeechbook.wordpress.com/
