@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TTSWithIntent</string>
+    <string name="tts_hint">Type some words to be spoken</string>
+    <string name="tts_speak_button">Speak</string>
+
+</resources>

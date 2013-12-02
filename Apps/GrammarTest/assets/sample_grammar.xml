@@ -1,0 +1,70 @@
+<grammar root="phrase">
+
+	<rule id="phrase">
+		<ruleref uri="verb"/> <ruleref uri="flights"/> <ruleref uri="origin"/> <ruleref uri="destination"/><ruleref uri="depart_day"/><ruleref uri="depart_time"/>
+	</rule>
+				
+	<rule id="verb">
+	    <item repeat="0-1">
+			<one-of>
+				<item><tag>show</tag>Show me</item>
+				<item><tag>show</tag>I would like</item>
+				<item><tag>show</tag>Are there any</item>
+			</one-of>
+		</item>
+	</rule>
+	
+	<rule id="flights">
+	    <item repeat="0-1">
+			<one-of>
+				<item><tag>1</tag>a flight</item>
+				<item><tag>N</tag>flights</item>
+			</one-of>
+		</item>
+	</rule>
+
+	<rule id="origin">
+		<item>from</item>
+		<ruleref uri="city"/> 
+	</rule>
+
+	<rule id="destination">
+		<item>to</item>
+		<ruleref uri="city"/> 
+	</rule>
+
+	<rule id="depart_day">
+		<item>on</item>
+		<ruleref uri="day"/> 
+	</rule>
+
+	<rule id="depart_time">
+		<ruleref uri="time"/>
+	</rule>
+
+	<rule id="city">
+		<one-of>
+			<item><tag>LHR</tag>London</item>
+			<item><tag>CDG</tag>Paris</item>
+			<item><tag>JFK</tag>New York</item>
+		</one-of>
+	</rule>
+
+	<rule id="day">
+		<one-of>
+			<item><tag>M</tag>monday</item>
+			<item><tag>T</tag>tuesday</item>
+			<item><tag>W</tag>wednesday</item>
+		</one-of>
+	</rule>
+
+	<rule id="time">
+	    <item repeat="0-1">
+			<one-of>
+				<item><tag>a.m.</tag>morning</item>
+				<item><tag>p.m</tag>afternoon</item>
+			</one-of>
+		</item>
+	</rule>
+	
+</grammar>

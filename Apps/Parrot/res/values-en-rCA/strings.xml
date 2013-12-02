@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Canadian English
+	Used when the device's locale is Canadian English -->
+    
+    <string name="app_name">Parrot in CA English</string>
+    <string name="action_settings">Settings</string>
+    <string name="instructions">Hello Canadian friend! I speak Canada English</string>
+    <string name="speak_btn">Press to speak</string>
+    <string name="image_description">Parrot</string>
+
+</resources>

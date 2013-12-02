@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GrammarTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="ask_phrase">Please introduce a phrase</string>
+    <string name="result_none">The result will appear here</string>
+    <string name="result_ok">Valid :)</string>
+    <string name="result_bad">Not valid :(</string>
+    <string name="txt_btn">Check text</string>
+    <string name="asr_btn_listening">Listening!</string>
+    <string name="asr_btn_default">Check ASR</string>
+    
+    <!-- Colors -->
+	<color name="asr_btn_default">#EEEEEE</color>
+	<color name="asr_btn_listening">#99FFBB</color>
+	<string name="radiobutton_handcrafted">Hand-crafted grammar</string>
+	<string name="radiobutton_statistical">Statistical grammar</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MusicBrain</string>
+	<string name="restartbtn">Start again</string>
+	<string name = "action_settings">Action settings</string>
+	
+<!-- Colors -->
+	<string name="resulttxt">Matching albums:</string>
+
+</resources>

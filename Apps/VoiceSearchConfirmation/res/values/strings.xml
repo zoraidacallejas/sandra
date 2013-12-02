@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VoiceSearchConfirmation</string>
+    <string name="listening_prompt">I am listening</string>
+    <string name="searching_prompt">Searching for</string>
+    <string name="confirm_prompt">Did you say</string>
+    <string name="speechbtn_default">Press to speak</string>
+	<string name="speechbtn_listening">I am listening!</string>
+	<string name="speechbtn_confirming">Press to say yes or no</string>
+	<string name="action_settings">VoiceSearchConfirmation</string>
+	
+<!-- Colors -->
+	<color name="speechbtn_default">#EEEEEE</color>
+	<color name="speechbtn_listening">#99FFBB</color>
+	<color name="speechbtn_confirming">#CC3333</color>
+</resources>

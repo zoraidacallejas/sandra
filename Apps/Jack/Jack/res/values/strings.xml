@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jack</string>
+    <string name="initial_prompt">What is your query?</string>
+    <string name = "speech_btn_prompt">Press to speak</string>
+    <string name="title">Chat with Jack</string>
+    <string name="presentation">Hi! I\'m Jack. Press the Speak button to talk to me</string>
+    <string name="imageDescription">Jack image</string>
+
+</resources>
