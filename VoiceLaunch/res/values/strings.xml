@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VoiceLaunch</string>
+    <string name="initial_prompt">Name an app</string>
+    <string name="instructions_threshold">Similarity threshold (0=none , 1=identical):</string>
+    <string name="instructions_measure">Similarity criteria:</string>
+    <string name="radiobutton_orthographic">Orthographic similarity</string>
+    <string name="radiobutton_phonetic">Phonetic similarity</string>
+    <string name="speechbtn_default">Press to speak</string>
+    	<string name="speechbtn_listening">I am listening!</string>
+	
+<!-- Colors -->
+	<color name="speechbtn_default">#EEEEEE</color>
+	<color name="speechbtn_listening">#99FFBB</color>
+</resources>

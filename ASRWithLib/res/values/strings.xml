@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Strings -->
+    <string name="app_name">ASRWithLib</string>
+	<string name="radiobutton_web">Web search</string>
+	<string name="radiobutton_free">Free form</string>
+	<string name="instructions_langmodel">Choose a language model</string>
+	<string name="instructions_numresults">Choose the maximum number of results</string>
+	<string name="speechbtn_default">Press the button to speak</string>    
+	<string name="speechbtn_listening">I am listening!</string>
+	
+<!-- Colors -->
+	<color name="speechbtn_default">#EEEEEE</color>
+	<color name="speechbtn_listening">#99FFBB</color>
+</resources>

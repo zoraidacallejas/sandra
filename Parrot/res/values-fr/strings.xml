@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  CA French
+	Used when the device's locale is French (even for France French) -->
+    
+    <string name="app_name">Parrot en français</string>
+    <string name="action_settings">Configuration</string>
+    <string name="instructions">Bonjour mon ami! je parle français</string>
+    <string name="speak_btn">Appuyez pour parler</string>
+    <string name="image_description">Parrot</string>
+
+</resources>

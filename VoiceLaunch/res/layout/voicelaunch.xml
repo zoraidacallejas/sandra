@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/instructions_langmodel_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions_measure"
+        android:textSize="15sp" />
+        
+    <RadioGroup
+	    android:id="@+id/measure_radioGroup"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	    <RadioButton
+	        android:id="@+id/orthographic_radio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/radiobutton_orthographic"
+	        android:checked="true" />
+	
+	    <RadioButton
+	        android:id="@+id/phonetic_radio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/radiobutton_phonetic" />
+	</RadioGroup>
+
+    <TextView
+        android:id="@+id/instructions_threshold_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/instructions_threshold"
+        android:textSize="15sp" />
+
+    <SeekBar
+        android:id="@+id/threshold_seekBar"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/bar_progress"
+        android:thumb="@drawable/bar_thumb" />
+
+    <Button
+        android:id="@+id/speech_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/speechbtn_default"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/matchingapps_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

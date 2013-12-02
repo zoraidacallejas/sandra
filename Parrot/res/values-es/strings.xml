@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  US Spanish
+	Used when the device's locale is Spanish (even for Iberian Spanish it will use the US variety...) -->
+    
+    <string name="app_name">Loro en español</string>
+    <string name="action_settings">Configuración</string>
+    <string name="instructions">¡Hola amigo! Hablo español</string>
+    <string name="speak_btn">Pulsa para hablar</string>
+    <string name="image_description">Loro</string>
+
+</resources>

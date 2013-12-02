@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Silly Parrot</string>
+    <string name="action_settings">Settings</string>
+    <string name="instructions">Select a language, then press the button to speak</string>
+    <string name="speak_btn">Press to speak</string>
+    <string name="image_description">Parrot</string>
+
+</resources>

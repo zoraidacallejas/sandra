@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VoiceSearch</string>
+    <string name="initial_prompt">What is your query?</string>
+    <string name="searching_prompt">Searching for</string>
+    <string name="speechbtn_default">Press to speak</string>
+	<string name="speechbtn_listening">I am listening!</string>
+	
+<!-- Colors -->
+	<color name="speechbtn_default">#EEEEEE</color>
+	<color name="speechbtn_listening">#99FFBB</color>
+</resources>

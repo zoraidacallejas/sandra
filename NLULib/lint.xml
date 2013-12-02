@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="UseSparseArrays">
+        <ignore path="src/sandra/libs/nlu/nlulib/HandCraftedGrammar.java" />
+    </issue>
+</lint>
