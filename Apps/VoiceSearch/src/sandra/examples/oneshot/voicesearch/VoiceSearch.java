@@ -251,6 +251,7 @@ public class VoiceSearch extends ASR {
 			intent.putExtra(SearchManager.QUERY, criterion);
 			intent.setAction(Intent.ACTION_WEB_SEARCH);
 			ResolveInfo resolveInfo = pm.resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY );
+			startActivity(intent); 
 	
 			if( resolveInfo == null )
 				Log.e(LOGTAG, "Not possible to carry out ACTION_WEB_SEARCH Intent");	
