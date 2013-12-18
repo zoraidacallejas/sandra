@@ -1,0 +1,10 @@
+<grammar root="urgency">
+
+	<rule id="urgency">
+		<one-of>
+			<item>Urgent</item>
+			<item>Normal</item>
+		</one-of>
+	</rule>
+	
+</grammar>

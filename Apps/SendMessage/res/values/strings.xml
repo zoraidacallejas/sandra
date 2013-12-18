@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SendMessage</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="recipient">Recipient</string>
+    <string name="ackreceipt">Acknowledgment of receipt</string>    
+    <string name="urgency_txt">Urgency</string>
+    <string name="urgency_rb_urgent">Urgent</string>
+    <string name="urgency_rb_normal">Normal</string>
+    <string name="message_txt">Message</string>
+    <string name="btn_new">New message</string>
+    <string name="btn_send">Send</string>
+    
+</resources>

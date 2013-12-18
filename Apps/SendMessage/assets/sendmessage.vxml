@@ -1,0 +1,24 @@
+<form>
+<field name="contact"> 
+	<prompt>Who is the recipient?</prompt> 
+	<grammar src="contact_grammar.xml"/> 
+	<noinput> Sorry, I could not hear you </noinput> 
+	<nomatch> Sorry, I did not understand what you said. Please say the name of one of your contacts </nomatch> 
+</field>
+<field name="ack"> 
+	<grammar src="ack_grammar.xml"/> 
+	<prompt>Do you need acknowledgment of receipt?</prompt> 
+	<noinput> Sorry, I could not hear you </noinput> 
+	<nomatch> Sorry, I did not understand what you said </nomatch> 
+</field>
+<field name="urgency"> 
+	<grammar src="urgency_grammar.xml"/> 
+	<prompt>Is the message urgent or normal?</prompt> 
+	<noinput> Sorry, I could not hear you </noinput> 
+	<nomatch> Sorry, I did not understand what you said </nomatch>
+</field>
+<field name="message"> 
+	<prompt>Please dictate the message</prompt> 
+	<noinput> Sorry, I could not hear you </noinput> 
+</field>
+</form>

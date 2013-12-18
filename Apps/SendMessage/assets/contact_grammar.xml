@@ -1,0 +1,11 @@
+<grammar root="contact">
+
+	<rule id="contact">
+		<one-of>
+			<item>My mother</item>
+			<item>My uncle</item>
+			<item>My brother</item>
+		</one-of>
+	</rule>
+	
+</grammar>

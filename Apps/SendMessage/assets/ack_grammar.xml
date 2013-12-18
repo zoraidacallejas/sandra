@@ -1,0 +1,10 @@
+<grammar root="receipt">
+
+	<rule id="receipt">
+		<one-of>
+			<item>Yes</item>
+			<item>No</item>
+		</one-of>
+	</rule>
+	
+</grammar>
