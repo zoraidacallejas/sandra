@@ -38,6 +38,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
 import android.graphics.Paint.Style;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Build;
@@ -66,7 +67,7 @@ import sandra.examples.oneshot.voicelaunch.R;
  * 
  * @author Zoraida Callejas
  * @author Michael McTear
- * @version 4.1, 08/07/13
+ * @version 4.2, 01/22/14
  *
  */
 public class VoiceLaunch extends ASR {
@@ -256,7 +257,7 @@ public class VoiceLaunch extends ASR {
 	private void indicateListening() {
 		Button button = (Button) findViewById(R.id.speech_btn); //Obtains a reference to the button
 		button.setText(getResources().getString(R.string.speechbtn_listening)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.speechbtn_listening)); //Changes the button's background to the color obtained from the resources folder
+		button.getBackground().setColorFilter(getResources().getColor(R.color.speechbtn_listening),PorterDuff.Mode.MULTIPLY); //Changes the button's background to the color obtained from the resources folder
 		myTts.speak(getResources().getString(R.string.initial_prompt)); 
 		setListView(new ArrayList<String>()); //Clean result list 
 	}
@@ -279,7 +280,7 @@ public class VoiceLaunch extends ASR {
 	private void changeButtonAppearanceToDefault(){
 		Button button = (Button) findViewById(R.id.speech_btn); //Obtains a reference to the button
 		button.setText(getResources().getString(R.string.speechbtn_default)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.speechbtn_default));	//Changes the button's background to the color obtained from the resources folder		
+		button.getBackground().setColorFilter(getResources().getColor(R.color.speechbtn_default),PorterDuff.Mode.MULTIPLY);	//Changes the button's background to the color obtained from the resources folder		
 	}
 
 	/**

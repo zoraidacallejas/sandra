@@ -41,7 +41,7 @@ import android.widget.Toast;
 
 
 /**
- * TTSDemo: Basic app with text to speech synthesis using the <code>TTSLib</code>
+ * TTSWithLib: Basic app with text to speech synthesis using the <code>TTSLib</code>
  * 
  * Simple demo in which the user writes a text in a text field
  * and it is synthesized by the system when pressing a button.
@@ -49,10 +49,10 @@ import android.widget.Toast;
  * @author Zoraida Callejas
  * @author Michael McTear
  * 
- * @version 2.6, 11/24/13
+ * @version 2.7, 01/22/14	
  *
- * @see <code>TTSBegin</code> for the equivalent app without the <code>TTSLib</code> library
- * (note: <code>TTSBegin</code> does not allow to set the language).
+ * @see <code>TTSWithIntent</code> for the equivalent app without the <code>TTSLib</code> library
+ * (note: <code>TTSWithIntent</code> does not allow to set the language).
  */
 public class TTSWithLib extends Activity {
 

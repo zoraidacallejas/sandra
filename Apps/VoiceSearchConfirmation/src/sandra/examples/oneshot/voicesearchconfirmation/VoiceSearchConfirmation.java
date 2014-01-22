@@ -29,6 +29,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.PorterDuff;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -51,7 +52,7 @@ import sandra.examples.oneshot.voicesearchconfirmation.R;
  * 
  * @author Zoraida Callejas
  * @author Michael McTear
- * @version 1.3, 11/24/13
+ * @version 1.4, 01/22/14
  *
  */
 public class VoiceSearchConfirmation extends ASR {
@@ -141,7 +142,7 @@ public class VoiceSearchConfirmation extends ASR {
 	private void indicateListening() {
 		Button button = (Button) findViewById(R.id.speech_btn); //Obtains a reference to the button
 		button.setText(getResources().getString(R.string.speechbtn_listening)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.speechbtn_listening)); //Changes the button's background to the color obtained from the resources folder
+		button.getBackground().setColorFilter(getResources().getColor(R.color.speechbtn_listening),PorterDuff.Mode.MULTIPLY); //Changes the button's background to the color obtained from the resources folder
 	}
 	
 	/**
@@ -164,7 +165,7 @@ public class VoiceSearchConfirmation extends ASR {
 	private void askConfirm(String criteria) {
 		Button button = (Button) findViewById(R.id.speech_btn); //Obtains a reference to the button
 		button.setText(getResources().getString(R.string.speechbtn_confirming)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.speechbtn_confirming)); //Changes the button's background to the color obtained from the resources folder
+		button.getBackground().setColorFilter(getResources().getColor(R.color.speechbtn_confirming),PorterDuff.Mode.MULTIPLY); //Changes the button's background to the color obtained from the resources folder
 		try {
 			myTts.speak(getResources().getString(R.string.confirm_prompt)+criteria, "EN");
 		} catch (Exception e) {
@@ -180,7 +181,7 @@ public class VoiceSearchConfirmation extends ASR {
 	private void changeButtonAppearanceToDefault(){
 		Button button = (Button) findViewById(R.id.speech_btn); //Obtains a reference to the button
 		button.setText(getResources().getString(R.string.speechbtn_default)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.speechbtn_default));	//Changes the button's background to the color obtained from the resources folder		
+		button.getBackground().setColorFilter(getResources().getColor(R.color.speechbtn_default),PorterDuff.Mode.MULTIPLY);	//Changes the button's background to the color obtained from the resources folder		
 	}
 	
 	/**

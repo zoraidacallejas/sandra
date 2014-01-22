@@ -52,7 +52,7 @@ import android.widget.Toast;
  * 
  * @author Zoraida Callejas
  * @author Michael McTear
- * @version 1.6, 11/24/13
+ * @version 1.7, 01/22/14
  *
  */
 
@@ -207,6 +207,8 @@ public class ASRWithIntent extends Activity {
 							else
 								nBestView.add(nBestList.get(i) + " (no confidence value available)");
 						}
+						else
+							nBestView.add(nBestList.get(i) + " (no confidence value available)");
 					}
 					
 					//Includes the collection in the ListView of the GUI
@@ -229,7 +231,7 @@ public class ASRWithIntent extends Activity {
 	private void setListView(ArrayList<String> nBestView){
 		
 		// Instantiates the array adapter to populate the listView
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, nBestView);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nBestView);
     	ListView listView = (ListView) findViewById(R.id.nbest_listview);
     	listView.setAdapter(adapter);
 

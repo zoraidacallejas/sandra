@@ -34,6 +34,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import sandra.libs.nlu.nlulib.GrammarException;
 import sandra.libs.nlu.nlulib.NLU;
 import android.content.res.AssetManager;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
@@ -58,7 +59,7 @@ import android.widget.Toast;
  * 
  * @author Zoraida Callejas
  * @author Michael McTear
- * @version 3.0, 08/27/13
+ * @version 3.1, 01/22/14
  *
  */
 
@@ -109,6 +110,9 @@ public class GrammarTest extends NLU {
 		} catch (GrammarException e) {
 			Toast.makeText(this,"Error processing the recognized phrase", Toast.LENGTH_SHORT).show();
 			Log.e(LOGTAG,"Error with handcrafted grammar: "+e.getMessage());
+		} catch (Exception e) {
+			Toast.makeText(this,"Error processing the recognized phrase", Toast.LENGTH_SHORT).show();
+			Log.e(LOGTAG,"Error with handcrafted grammar: "+e.getMessage());
 		}
 		
 	}
@@ -123,6 +127,9 @@ public class GrammarTest extends NLU {
 		} catch (GrammarException e) {
 			Toast.makeText(this,"Error connecting with the Maluuba service", Toast.LENGTH_SHORT).show();
 			Log.e(LOGTAG, "Maluuba could not be used: "+e.getMessage());
+		} catch (Exception e) {
+			Toast.makeText(this,"Error connecting with the Maluuba service", Toast.LENGTH_SHORT).show();
+			Log.e(LOGTAG, "Error in the NLULib: "+e.getMessage());
 		}
 	}
 	
@@ -151,7 +158,10 @@ public class GrammarTest extends NLU {
 		} catch (GrammarException e) {
 			Toast.makeText(this,"Error processing the recognized phrase", Toast.LENGTH_SHORT).show();
 			Log.e(LOGTAG,"Error with handcrafted grammar: "+e.getMessage());
-		}	
+		} catch (Exception e) {
+			Toast.makeText(this,"Error processing the recognized phrase", Toast.LENGTH_SHORT).show();
+			Log.e(LOGTAG, "Error in the NLULib: "+e.getMessage());
+		}
 	}
 	
 	/**
@@ -165,6 +175,9 @@ public class GrammarTest extends NLU {
 			} catch (GrammarException e) {
 				Toast.makeText(this,"Error connecting with the Maluuba service", Toast.LENGTH_SHORT).show();
 				Log.e(LOGTAG, "Maluuba could not be used: "+e.getMessage());
+			} catch (Exception e) {
+				Toast.makeText(this,"Error connecting with the Maluuba service", Toast.LENGTH_SHORT).show();
+				Log.e(LOGTAG, "Error in the NLULib: "+e.getMessage());
 			}
 	}
 
@@ -173,7 +186,7 @@ public class GrammarTest extends NLU {
 	 */
 	private void setButtonText() {
 		Button txt = (Button) findViewById(R.id.txtButton);
-		txt.setBackgroundColor(getResources().getColor(R.color.asr_btn_default));	
+		txt.getBackground().setColorFilter(getResources().getColor(R.color.asr_btn_default),PorterDuff.Mode.MULTIPLY);	
 		txt.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
@@ -296,7 +309,7 @@ public class GrammarTest extends NLU {
 	private void indicateListening() {
 		Button button = (Button) findViewById(R.id.asrButton); //Obtains a reference to the button
 		button.setText(getResources().getString(R.string.asr_btn_listening)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.asr_btn_listening)); //Changes the button's background to the color obtained from the resources folder
+		button.getBackground().setColorFilter(getResources().getColor(R.color.asr_btn_listening),PorterDuff.Mode.MULTIPLY); //Changes the button's background to the color obtained from the resources folder
 	}
 	
 	/**
@@ -305,7 +318,7 @@ public class GrammarTest extends NLU {
 	private void indicateNotListening(){
 		Button button = (Button) findViewById(R.id.asrButton); //Obtains a reference to the button
 		button.setText(getResources().getString(R.string.asr_btn_default)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.asr_btn_default));	//Changes the button's background to the color obtained from the resources folder		
+		button.getBackground().setColorFilter(getResources().getColor(R.color.asr_btn_default),PorterDuff.Mode.MULTIPLY);	//Changes the button's background to the color obtained from the resources folder		
 	}
 	
 	/**

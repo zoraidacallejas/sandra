@@ -39,6 +39,7 @@ import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+import android.graphics.PorterDuff;
 
 /**
  * ASRWithLib: Basic app with ASR using the <code>ASRLib</code>
@@ -48,7 +49,7 @@ import android.widget.Toast;
  * 
  * @author Zoraida Callejas
  * @author Michael McTear
- * @version 2.5, 11/24/13
+ * @version 2.6, 01/22/14
  *
  */
 public class ASRWithLib extends ASR {
@@ -184,6 +185,8 @@ public class ASRWithLib extends ASR {
 					else
 						nBestView.add(nBestList.get(i) + " (no confidence value available)");
 				}
+				else
+					nBestView.add(nBestList.get(i) + " (no confidence value available)");
 			}
 		}
 		
@@ -221,7 +224,9 @@ public class ASRWithLib extends ASR {
 		Button button = (Button) findViewById(R.id.speech_btn); //Obtains a reference to the button
 		button.setEnabled(false); //Deactivates the button so that the user cannot press it while the app is recognizing
 		button.setText(getResources().getString(R.string.speechbtn_listening)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.speechbtn_listening)); //Changes the button's background to the color obtained from the resources folder
+		button.getBackground().setColorFilter(getResources().getColor(R.color.speechbtn_listening),PorterDuff.Mode.MULTIPLY); //Changes the button's background to the color obtained from the resources folder
+
+
 	}
 	
 	/**
@@ -231,7 +236,7 @@ public class ASRWithLib extends ASR {
 		Button button = (Button) findViewById(R.id.speech_btn); //Obtains a reference to the button
 		button.setEnabled(true); //Deactivates the button so that the user cannot press it while the app is recognizing
 		button.setText(getResources().getString(R.string.speechbtn_default)); //Changes the button's message to the text obtained from the resources folder
-		button.setBackgroundColor(getResources().getColor(R.color.speechbtn_default));	//Changes the button's background to the color obtained from the resources folder
+		button.getBackground().setColorFilter(getResources().getColor(R.color.speechbtn_default),PorterDuff.Mode.MULTIPLY); //Changes the button's background to the color obtained from the resources folder
 	}
 	
 	/**
